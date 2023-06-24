@@ -1,0 +1,287 @@
+html {
+  overflow-x: hidden;
+}
+
+#header {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  left: 0;
+  right: 0;
+}
+
+#title {
+  position: absolute;
+  left: 40vw;
+}
+
+#title-contact {
+  position: basolute;
+  left: 40vw;
+}
+
+#contact {
+  position: absolute;
+  right: 4vw;
+}
+
+#menu-button {
+  position: absolute;
+  left: 5vw;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.list {
+  font-size: 200%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: rgb(50, 52, 23);
+  background: radial-gradient(
+    circle,
+    rgba(50, 52, 23, 1) 0%,
+    rgba(46, 47, 39, 1) 13%,
+    rgba(0, 0, 0, 1) 86%
+  );
+  height: 100vh;
+  width: 200vw;
+  background-size: cover;
+}
+
+#about {
+  width: 50%;
+  left: 40vw;
+  color: white;
+  position: absolute;
+  top: 30vh;
+}
+
+#about-games {
+  margin: auto;
+  color: white;
+  width: 50%;
+  top: 30vh;
+  left: 50vw;
+  position: absolute;
+}
+
+#about-software {
+  margin: auto;
+  color: white;
+  width: 50%;
+  top: 30vh;
+  left: 50vw;
+  position: absolute;
+}
+
+#collapse-menu {
+  position: absolute;
+  top: 11vh;
+  right: 80vw;
+  z-index: 100;
+}
+
+#hello {
+  font-size: 400px;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  filter: blur(17px);
+  color: rgba(255, 255, 255, 40%);
+  z-index: -5;
+}
+
+#games-list {
+  display: flex;
+  justify-content: center;
+}
+
+#games-grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  position: absolute;
+  top: 65vh;
+  padding-bottom: 5%;
+}
+
+#game1,
+#game2,
+#game3,
+#game4,
+#game5 {
+  text-align: center;
+}
+
+#playlists {
+  width: 50vw;
+  height: 20vh;
+  position: absolute;
+  top: 70vh;
+  left: 25vw;
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 2.5rem;
+  padding-bottom: 5%;
+}
+
+#title-contact {
+  margin-right: 42vw;
+}
+
+#contact-details {
+  color: white;
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+}
+
+#portfolio-section {
+  color: white;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 60vh;
+  padding-bottom: 5em;
+  padding-left: 5em;
+}
+
+#part1 {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+#portfolio-image-1 {
+  width: 40rem;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) {
+  #hello {
+    font-size: 100px;
+    filter: blur(7px);
+    top: 10vh;
+    left: 5vw;
+  }
+
+  #header {
+    width: 100vw;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #about {
+    width: 100vw;
+    top: 25vh;
+    left: 0;
+    text-align: center;
+  }
+
+  #about-games {
+    width: 100%;
+    top: 28vh;
+    left: 0;
+    text-align: center;
+  }
+
+  #about-software {
+    width: 50%;
+    top: 28vh;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  #contact {
+    position: absolute;
+    top: 0.5rem;
+    left: 33.4vh;
+  }
+
+  #menu-button {
+    position: absolute;
+    right: 80vw;
+    top: 1vh;
+  }
+
+  #collapse-menu {
+    top: 5vh;
+    right: 82vw;
+  }
+
+  .list {
+    font-size: 150%;
+  }
+
+  #games-grid {
+    grid-template-columns: repeat(1, 1fr);
+    top: 75vh;
+  }
+
+  #portfolio-section {
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    top: 70vh;
+    padding-bottom: 5em;
+    padding-left: 0;
+    justify-items: center;
+  }
+
+  #playlists {
+    width: 100%;
+    height: 20vh;
+    top: 80vh;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 2.5rem;
+    padding-bottom: 5%;
+    justify-content: center;
+  }
+
+  #title-contact {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
