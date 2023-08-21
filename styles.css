@@ -168,9 +168,11 @@ hr {
   top: 60vh;
   padding-bottom: 5em;
   padding-left: 5em;
+  left:0;
+  right:0;
 }
 
-#part1 {
+#part1, #part2{
   display: flex;
   margin: auto;
   flex-direction: column;
