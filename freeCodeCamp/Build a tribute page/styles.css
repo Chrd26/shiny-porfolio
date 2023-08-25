@@ -1,0 +1,111 @@
+header > h1{
+    /*Stylize the header's h1*/
+    margin-top: 10pt;
+}
+
+header > h2{
+    /*Stylize the header's h2*/
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header{
+    /*Stylize header*/
+    display: block;
+}
+
+html{
+    /*Stylize html body*/
+    background-color: #c3c3b9;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#image{
+    /*Stylize Image of Jack*/
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+    border: 1pt solid green;
+}
+
+body{
+    /*Stylize Body*/
+    background-color: beige;
+    border-radius: 1%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0%;
+    padding: 1% 0 5% 0;
+}
+
+  nav{
+    /*Stylize nav's list items*/
+    margin: 0 0 0 0;
+    }
+
+    #nav-item, #tribute-info{
+        /*Stylize nav items and tribute info*/
+    color: black;
+    display: block;
+    }
+
+    #nav-list{
+        /*Stylize unordered list*/
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-items{
+        /*Stylize list*/
+        list-style:none;
+        display: block;
+    }
+
+    .captionImage{
+        /*Stylize image's caption*/
+        text-align: center;
+        padding-top: 10pt;
+        margin-top: 0%;
+    }
+
+    #introduction{
+        /*Stylize the paragraph that has the introduction id*/
+     text-align: center;
+     margin-left: 2%;
+     margin-right: 2%;
+     margin-top: 0;
+
+    }
+
+    #infoParagraph{
+        /*Stylize the paragraph that has the infoParagraph id*/
+        text-align: center;
+    }
+
+    .section-title{
+        /*Center section titles*/
+        text-align: center;
+    }
+
+    .tribute-list{
+        /*Stylize elements with tribute-list class*/
+        list-style:decimal;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .paragraphs{
+        /*Stylize elements with paragraphs class*/
+        margin-right: 2%;
+        margin-left: 2%;  
+    }
+    
+    *{
+    /*Set Scroll Behavior*/ 
+    scroll-behavior: smooth;
+    }

@@ -1,381 +1,139 @@
-html {
-  overflow-x: hidden;
+@font-face {
+    font-family: 'nautilus_pompiliusregular';
+    src: url('fonts/nautilus-webfont.woff2') format('woff2'),
+         url('fonts/nautilus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#header {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
-  color: white;
-  position: absolute;
-  width: 100%;
-  height: 10vh;
-  left: 0;
-  right: 0;
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#title {
-  position: absolute;
-  left: 40vw;
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-#title-contact {
-  position: basolute;
-  left: 40vw;
+html
+{
+    overflow:hidden;
 }
 
-#contact {
-  position: absolute;
-  right: 4vw;
+body{
+    background-image: url("background.jpg");
 }
 
-#menu-button {
-  position: absolute;
-  left: 5vw;
+#nav-holder{
+    display:block;
+    background: rgba(109,225,255, 0.6);
+    background: linear-gradient(
+    65deg, rgba(109,225,255,0.6) 0%, 
+    rgba(97,124,231,0.6) 29%, rgba(29,108,87,0.6) 57%, 
+    rgba(138,110,144,0.6) 71%, rgba(17,61,153,0.6) 100%);
+    backdrop-filter: blur(6px);
+    position:sticky;
+    top:0vw;
+    width:98vw;
+    margin:auto;
+    border:1px solid black;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+#nav-holder > nav > ul > li
+{
+    list-style: none;
 }
 
-.list {
-  font-size: 200%;
+#nav-holder > nav > ul > li > a{ 
+    font-family: "nautilus_pompiliusregular", arial;
+    text-decoration: none;
+    font-size:2rem;
+    transition: font-size 0.2s;
+    margin-top:1.3vh;
 }
 
-ul {
-  list-style: none;
+#nav-holder > nav > ul > li > a:link{
+    color:white;
 }
 
-body {
-  background: rgb(50, 52, 23);
-  background: radial-gradient(
-    circle,
-    rgba(50, 52, 23, 1) 0%,
-    rgba(46, 47, 39, 1) 13%,
-    rgba(0, 0, 0, 1) 86%
-  );
-  height: 100vh;
-  width: 200vw;
-  background-size: cover;
+#nav-holder > nav > ul > li > a:visited{
+    color:white;
 }
 
-#about {
-  width: 50%;
-  left: 40vw;
-  color: white;
-  position: absolute;
-  top: 30vh;
+#nav-holder > nav > ul > li > .nav-link:hover{
+    color:crimson;
+    font-size: 2.2rem;
 }
 
-#about-games {
-  margin: auto;
-  color: white;
-  width: 50%;
-  top: 30vh;
-  left: 50vw;
-  position: absolute;
+#nav-list{
+    display:flex; 
+    flex-direction:row;
+    justify-content: space-evenly;
 }
 
-#about-software {
-  margin: auto;
-  color: white;
-  width: 50%;
-  top: 30vh;
-  left: 50vw;
-  position: absolute;
+i
+{
+    color:white;
+    margin-top:2vh;
+    transition: color 1s;
 }
 
-#collapse-menu {
-  position: absolute;
-  top: 11vh;
-  right: 80vw;
-  z-index: 100;
+i:hover
+{   
+    color:crimson;
+    animation-name: icon_hover;
+    animation-duration: 2s;
+    animation-iteration-count:1;
 }
 
-#hello {
-  font-size: 400px;
-  position: absolute;
-  top: 15vh;
-  left: 10vw;
-  filter: blur(17px);
-  color: rgba(255, 255, 255, 40%);
-  z-index: -5;
+#index-main
+{
+    display:block;
+    background: rgba(109,225,255, 0.6);
+    background: linear-gradient(
+    65deg, rgba(109,225,255,0.6) 0%, 
+    rgba(97,124,231,0.6) 29%, rgba(29,108,87,0.6) 57%, 
+    rgba(138,110,144,0.6) 71%, rgba(17,61,153,0.6) 100%);
+    backdrop-filter: blur(5px);
+    width:98vw;
+    height:100vh;
+    margin:auto;
+    border:1px solid black;
 }
 
-#games-list {
-  display: flex;
-  justify-content: center;
+#index-text{
+    margin-top:18vh;
+    display:flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left:5vw;
 }
 
-#games-grid {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
-  position: absolute;
-  top: 65vh;
-  padding-bottom: 5%;
+.headline{
+    font-size:130px;
+    font-family: "alex_brushregular", ar;
+    font-weight:bold;
+    max-width:70%;
 }
 
-#game1,
-#game2,
-#game3,
-#game4,
-#game5 {
-  text-align: center;
+.subheadline{
+    font-size:60px;
+    font-family: "ralewaysemibold", arial;
+    max-width:40%;
+    margin-left:45vw;
 }
 
-#playlists {
-  width: 50vw;
-  height: 20vh;
-  position: absolute;
-  top: 70vh;
-  left: 25vw;
-  display: grid;
-  grid-auto-flow: row;
-  grid-row-gap: 2.5rem;
-  padding-bottom: 5%;
-}
-
-#title-contact {
-  margin-right: 42vw;
-}
-
-#contact-details {
-  color: white;
-  position: absolute;
-  top: 40vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-hr {
-  width: 100%;
-}
-
-#portfolio-section {
-  color: white;
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
-  position: absolute;
-  top: 60vh;
-  padding-bottom: 5em;
-  padding-left: 5em;
-  left:0;
-  right:0;
-}
-
-#part1, #part2{
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-}
-
-#portfolio-image-1 {
-  width: 40rem;
-}
-/*Extra small devices (portrait phones, less than 576px)*/
-/* No media query for `xs` since this is the default in Bootstrap*/
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 500px) {
-  #hello {
-    font-size: 100px;
-    filter: blur(7px);
-    top: 10vh;
-    left: 5vw;
-  }
-
-  #header {
-    width: 100vw;
-  }
-
-  #title {
-    display: none;
-  }
-
-  #about {
-    width: 100vw;
-    top: 25vh;
-    left: 0;
-    text-align: center;
-  }
-
-  #about-games {
-    width: 100%;
-    top: 28vh;
-    left: 0;
-    text-align: center;
-  }
-
-  #about-software {
-    width: 50%;
-    top: 28vh;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  #contact {
-    position: absolute;
-    top: 0.62rem;
-    left: 72vw;
-  }
-
-  #menu-button {
-    position: absolute;
-    right: 80vw;
-    top: 1vh;
-  }
-
-  #collapse-menu {
-    top: 5vh;
-    right: 82vw;
-  }
-
-  .list {
-    font-size: 150%;
-  }
-
-  #games-grid {
-    grid-template-columns: repeat(1, 1fr);
-    top: 75vh;
-  }
-
-  #portfolio-section {
-    grid-template-columns: repeat(1, 1fr);
-    position: absolute;
-    top: 70vh;
-    padding-bottom: 5em;
-    padding-left: 0;
-    justify-items: center;
-  }
-
-  #playlists {
-    width: 100%;
-    height: 20vh;
-    top: 80vh;
-    left: 0;
-    right: 0;
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 2.5rem;
-    padding-bottom: 5%;
-    justify-content: center;
-  }
-
-  #title-contact {
-    display: none;
-  }
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (max-width: 850px) and (min-width: 501px) {
-  #hello {
-    font-size: 100px;
-    filter: blur(7px);
-    top: 10vh;
-    left: 5vw;
-  }
-
-  #header {
-    width: 100vw;
-  }
-
-  #title {
-    top: 0.5rem;
-    left: 17rem;
-  }
-
-  #about {
-    width: 100vw;
-    top: 25vh;
-    left: 0;
-    text-align: center;
-  }
-
-  #about-games {
-    width: 100%;
-    top: 28vh;
-    left: 0;
-    text-align: center;
-  }
-
-  #about-software {
-    width: 50%;
-    top: 28vh;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  #contact {
-    position: absolute;
-    top: 0.62rem;
-    left: 72vw;
-  }
-
-  #menu-button {
-    position: absolute;
-    right: 80vw;
-    top: 1vh;
-  }
-
-  #collapse-menu {
-    top: 5vh;
-    right: 77vw;
-  }
-
-  .list {
-    font-size: 150%;
-  }
-
-  #games-grid {
-    grid-template-columns: repeat(2, 1fr);
-    top: 50vh;
-  }
-
-  #portfolio-section {
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    top: 50vh;
-    left: 30vw;
-    text-align: center;
-    padding-bottom: 5em;
-    padding-left: 0;
-    justify-items: center;
-    width: 80vw;
-  }
-
-  #playlists {
-    width: 100%;
-    height: 20vh;
-    top: 50vh;
-    left: 0;
-    right: 0;
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 2.5rem;
-    padding-bottom: 5%;
-    justify-content: center;
-  }
-
-  #title-contact {
-    display: none;
-  }
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
+@keyframes icon_hover{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
 }
