@@ -1,3 +1,4 @@
+/*CUSTOM FONTS*/
 @font-face {
     font-family: 'nautilus_pompiliusregular';
     src: url('fonts/nautilus-webfont.woff2') format('woff2'),
@@ -20,31 +21,36 @@
          url('fonts/alexbrush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
+/*MAIN STYLING*/
 html
 {
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 body{
     background-image: url("background.jpg");
+    background-position-y: 25%;
 }
 
+/*INDEX STYLING*/
 #nav-holder{
     display:block;
     background: rgba(109,225,255, 0.6);
     background: linear-gradient(
-    65deg, rgba(109,225,255,0.6) 0%, 
-    rgba(97,124,231,0.6) 29%, rgba(29,108,87,0.6) 57%, 
-    rgba(138,110,144,0.6) 71%, rgba(17,61,153,0.6) 100%);
+    65deg, rgba(109,225,255,0.7) 0%, 
+    rgba(97,124,231,0.7) 29%, rgba(29,108,87,0.7) 57%, 
+    rgba(138,110,144,0.7) 71%, rgba(17,61,153,0.7) 100%);
     backdrop-filter: blur(6px);
     position:sticky;
     top:0vw;
     width:98vw;
     margin:auto;
     border:1px solid black;
+    background-size: 200% 200%;
+    animation: Animation 10s ease infinite;
+
 }
 
 #nav-holder > nav > ul > li
@@ -53,11 +59,11 @@ body{
 }
 
 #nav-holder > nav > ul > li > a{ 
-    font-family: "nautilus_pompiliusregular", arial;
+    font-family: "nautilus_pompiliusregular", Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-size:2rem;
+    font-size:2vw;
     transition: font-size 0.2s;
-    margin-top:1.3vh;
+    margin-top:1.7vh;
 }
 
 #nav-holder > nav > ul > li > a:link{
@@ -70,7 +76,7 @@ body{
 
 #nav-holder > nav > ul > li > .nav-link:hover{
     color:crimson;
-    font-size: 2.2rem;
+    font-size: 2.3vw;
 }
 
 #nav-list{
@@ -82,7 +88,7 @@ body{
 i
 {
     color:white;
-    margin-top:2vh;
+    margin-top:1.9vh;
     transition: color 1s;
 }
 
@@ -99,14 +105,16 @@ i:hover
     display:block;
     background: rgba(109,225,255, 0.6);
     background: linear-gradient(
-    65deg, rgba(109,225,255,0.6) 0%, 
-    rgba(97,124,231,0.6) 29%, rgba(29,108,87,0.6) 57%, 
-    rgba(138,110,144,0.6) 71%, rgba(17,61,153,0.6) 100%);
+    65deg, rgba(109,225,255,0.7) 0%, 
+    rgba(97,124,231,0.7) 29%, rgba(29,108,87,0.7) 57%, 
+    rgba(138,110,144,0.7) 71%, rgba(17,61,153,0.7) 100%);
     backdrop-filter: blur(5px);
     width:98vw;
     height:100vh;
     margin:auto;
     border:1px solid black;
+    background-size: 200% 200%;
+    animation: Animation 10s ease infinite;
 }
 
 #index-text{
@@ -120,20 +128,58 @@ i:hover
 }
 
 .headline{
-    font-size:130px;
-    font-family: "alex_brushregular", ar;
+    font-size:9vw;
+    font-family: "alex_brushregular", Arial, Helvetica, sans-serif;
     font-weight:bold;
     max-width:70%;
+    color:white;
 }
 
 .subheadline{
-    font-size:60px;
-    font-family: "ralewaysemibold", arial;
+    font-size:4vw;
+    font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
     max-width:40%;
     margin-left:45vw;
+    color:white;
 }
 
+/*ABOUT STYLING*/
+
+#lang_select{
+    margin-top:1vh;
+    margin-left:1.5vh;
+}
+
+#lang_select > label{
+    font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+#lang_select > label:hover{
+    background-color:rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px)
+}
+
+.paragraph{
+    font-size:2.1vw;
+    font-family: "ralewaysemibold", Arial, Helvetica, sans-serif;
+    color:white;
+    border: 1px double black;
+    width:85%;
+    margin:auto;
+    padding:2vw;
+    background:rgba(100,100,100,0.6);
+    backdrop-filter: blur(20px);
+}
+
+/*KEYFRAMES*/
 @keyframes icon_hover{
     0%{transform:rotate(0deg)}
     100%{transform:rotate(360deg)}
+}
+
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
 }
