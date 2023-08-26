@@ -2,7 +2,7 @@
 const fcc_responsive_design = [
     {
         title: "Survey Forms",
-        picture: "images/survey_ss", 
+        picture: "images/survey_ss.png", 
         url: "freeCodeCamp/Create Survey Form/index.html"
     },
     {
@@ -78,4 +78,9 @@ const clients = [
 
 ];
 
-let cur_index = 0;
+const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
+    "CS50", "Personal Project", "Clients"];
+
+const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, clients];
+
+lete cur_index = 0;
