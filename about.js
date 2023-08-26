@@ -25,6 +25,8 @@ const about_eng = "Christos Douris (AKA The_Runner_01) is a creator who blends a
 // When the window loads check which radio button is pressed
 // this is useful when the user somehow refreshes the page.
 window.addEventListener("load", () => {
+    //console.log(about_gr);
+    //console.log(about_eng);
     if (eng_radio.checked) {
         get_paragraph.innerText = about_eng;
     }
