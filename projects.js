@@ -2,8 +2,12 @@ const project_library = document.getElementById("project_library");
 const project_type = document.getElementById("project_type");
 const previous_button = document.getElementById("previous_type");
 const next_button = document.getElementById("next_type");
+const previous_project = document.getElementById('previous_card');
+const next_project = document.getElementById('next_card');
 let counter = 0;
 let project_types = 0;
+let projects_count = 0;
+let project_index = 0;
 
 // Create Elements for dom
 // Source: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
@@ -15,6 +19,7 @@ function addCards(object){
     divElem.setAttribute("id", card_id);
     divElem.style.transition = "margin-left 5s"
     divElem.style.animation = "cardAnimRight 0.1s ease-in reverse";
+    divElem.style.display = "block";
 
     let anchorElem = document.createElement("a");
     anchorElem.setAttribute("target", "_blank");
@@ -47,13 +52,15 @@ window.addEventListener("load", () =>
 
         project_type.innerText = projectnames[cur_index]; 
 
-        // For each item in fcc_responsive_design
+        // For each item in project_type 
         // Source: 
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
         projects_list[cur_index].forEach(item => {
             addCards(item);
-            console.log(item);
+            projects_count++;
         })
+
+        console.log(projects_count)
 });
 
 // When the next button is pressed, change the list of projects
@@ -74,4 +81,31 @@ previous_button.addEventListener("click", () => {
         project_type.innerText = projectnames[cur_index];
     }
 });
+
+// Change project card to the next one
+next_project.addEventListener("click", () => {
+    if (project_index < projects_count - 1){
+        console.log("Next");
+        let get_card = document.getElementById("index_" + project_index);
+        get_card.style.display = "none";
+        
+        project_index++;
+        get_card = document.getElementById("index_" + project_index);
+        get_card.style.display = "block";
+    }
+})
+
+// Change project card to the previous one
+previous_project.addEventListener("click", () => {
+   if (project_index > 0){
+        console.log("previous");
+        let get_card = document.getElementById("index_" + project_index);
+        get_card.style.display = "none";
+
+        project_index--;
+        get_card = document.getElementById("index_" + project_index);
+        get_card.style.display = "block";
+        console.log(get_card)
+    } 
+})
 

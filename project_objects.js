@@ -83,4 +83,4 @@ const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript
 
 const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, clients];
 
-lete cur_index = 0;
+let cur_index = 0;
