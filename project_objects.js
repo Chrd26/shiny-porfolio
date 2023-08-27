@@ -7,22 +7,22 @@ const fcc_responsive_design = [
     },
     {
         title: "Tribute Page",
-        picture: "",
+        picture: "images/tribute_ss.png",
         url: "freeCodeCamp/Build a tribute page/index.html"
     },
     {
         title: "Documentation Page",
-        picture:"",
+        picture:"images/techpage_ss.png",
         url: "freeCodeCamp/Build a Technical Documentation Page/index.html"
     },
     {
         title: "Landing Page",
-        picture: "",
+        picture: "images/landing_ss.png",
         url: "freeCodeCamp/Product Landing Page/index.html"
     },
     {
         title: "Portfolio Page",
-        picture: "",
+        picture: "images/portf_ss.png",
         url: "freeCodeCamp/Personal Portfolio WebPage/index.html"
     }
 ];
@@ -31,7 +31,7 @@ const fcc_responsive_design = [
 const fcc_javascript = [
     {   
         title: "JavaScript Course",
-        picture: "",
+        picture: "images/js_ss.png",
         url: "https://www.freecodecamp.org/certification/The_Runner_01/javascript-algorithms-and-data-structures"
     }
 ];
@@ -45,7 +45,7 @@ const cs50 = [
     },
     {
         title: "Spying Eye",
-        picture: "",
+        picture: "images/spyingeye.png",
         url: "https://spying-eye-cs50x.onrender.com/"
     }
 ];
