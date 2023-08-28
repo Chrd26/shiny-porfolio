@@ -41,8 +41,8 @@ const fcc_javascript = [
 const cs50 = [
     {
         title: "CS50 Finance",
-        picture: "",
-        url: ""
+        picture: "images/finance_ss.png",
+        url: "https://cs50finance-nuborhfoa-chrd26.vercel.app/login"
     },
     {
         title: "Spying Eye",
