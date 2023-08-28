@@ -30,7 +30,7 @@ const fcc_responsive_design = [
 // FreeCodeCamp JavaScript and Algorithms
 const fcc_javascript = [
     {   
-        title: "JavaScript Course",
+        title: "Certification",
         picture: "images/js_ss.png",
 
         url: "https://www.freecodecamp.org/certification/The_Runner_01/javascript-algorithms-and-data-structures"
