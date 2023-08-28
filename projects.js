@@ -44,6 +44,19 @@ function addCards(object){
     counter++;
 }
 
+// Delete dom elements
+function RemoveElements(){
+
+    while (counter >= 0){
+        let get_id = "index_" + counter;
+        let get_element = document.getElementById(get_id);
+        console.log(get_id);
+        console.log(get_element);
+        get_element.remove();
+        counter--;
+    }
+}
+
 window.addEventListener("load", () =>
 {
         projectnames.forEach(item => {project_types++});
@@ -59,7 +72,8 @@ window.addEventListener("load", () =>
             projects_count++;
         })
 
-        console.log(projects_count)
+        //console.log(projects_count);
+        counter--;
 });
 
 // When the next button is pressed, change the list of projects
@@ -68,6 +82,20 @@ next_button.addEventListener("click", () => {
     if (cur_index < project_types - 1){
         cur_index++;
         project_type.innerText = projectnames[cur_index];
+        projects_count = 0;
+
+        RemoveElements();
+
+        counter = 0;
+
+        projects_list[cur_index].forEach(item => {
+            addCards(item);
+            projects_count++;
+        })
+
+        counter--;
+        project_index = 0;
+        console.log(projects_count);
     }
 });
 
@@ -78,6 +106,19 @@ previous_button.addEventListener("click", () => {
     {   
         cur_index--;
         project_type.innerText = projectnames[cur_index];
+        projects_count = 0;
+        RemoveElements();
+
+        counter = 0;
+
+        projects_list[cur_index].forEach(item => {
+            addCards(item);
+            projects_count++;
+        })
+
+        counter--;
+        project_index = 0;
+        console.log(projects_count);
     }
 });
 

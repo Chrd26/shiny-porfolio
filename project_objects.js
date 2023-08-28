@@ -32,6 +32,7 @@ const fcc_javascript = [
     {   
         title: "JavaScript Course",
         picture: "images/js_ss.png",
+
         url: "https://www.freecodecamp.org/certification/The_Runner_01/javascript-algorithms-and-data-structures"
     }
 ];
@@ -50,14 +51,6 @@ const cs50 = [
     }
 ];
 
-// Video Games
-const games = [
-    {
-        title: "",
-        picture: "",
-        url: ""
-    }
-];
 
 // Personal Projects
 const personal_projects = [
@@ -79,7 +72,7 @@ const clients = [
 ];
 
 const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
-    "CS50", "Personal Project", "Clients"];
+    "CS50", "Personal Projects", "Clients"];
 
 const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, clients];
 
