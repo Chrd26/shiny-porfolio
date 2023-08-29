@@ -2,7 +2,7 @@
 const fcc_responsive_design = [
     {
         title: "Certificate and Projects",
-        picture: "images/cert.jpg",
+        picture: "images/fcc_cert.jpg",
         url: "https://www.freecodecamp.org/certification/The_Runner_01/responsive-web-design"
     },
 ];
@@ -11,7 +11,7 @@ const fcc_responsive_design = [
 const fcc_javascript = [
     {   
         title: "Certificate and Projects",
-        picture: "images/cert.jpg",
+        picture: "images/fcc_cert.jpg",
 
         url: "https://www.freecodecamp.org/certification/The_Runner_01/javascript-algorithms-and-data-structures"
     }
@@ -28,7 +28,12 @@ const cs50 = [
         title: "Spying Eye",
         picture: "images/spyingeye.jpg",
         url: "https://spying-eye-cs50x.onrender.com/"
-    }
+    },
+    {
+        title: "Certificate",
+        picture: "images/cs50_cert.jpg",
+        url: "https://certificates.cs50.io/838bbaa3-e410-413f-b574-b173f0b5db44.pdf?size=letter"
+    },
 ];
 
 
