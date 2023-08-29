@@ -373,7 +373,18 @@ body{
     }
 }
 
+@media screen and (max-width: 1000px){
+    #project_library{
+        height:70%;
+    }
+}
+
 @media screen and (max-width:600px){
+
+    .project_title{
+        font-size:18px;
+    }
+
     #project_library{
         width:80%;
         height:70%;

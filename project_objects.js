@@ -71,22 +71,41 @@ const personal_projects = [
         picture: "images/doundo.jpg",
         url: "https://github.com/Chrd26/The_Healing_self_Do_Undo"
     },
+    {
+        title: "Personal Website",
+        picture: "images/pwebsite.jpg",
+        url: "index.html"
+    },
 
 ];
 
 // Clients
 const external_work = [
     {
-        title: "",
-        picture: "",
-        url: ""
-    }
+        title: "Music Programming",
+        picture: "images/copi.jpg",
+        url: "https://asthegor.itch.io/curse-of-paradise-islands"
+    },
+    {
+        title: "Music Programming",
+        picture: "images/TROAOP.jpg",
+        url: "https://orama-interactive.itch.io/the-roots-of-all-our-problems"
+    },
 
 ];
 
-const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
-    "CS50", "Personal Projects", "External Work"];
+// Media Work
+const media = [
+    {
+        title: "Shorts",
+        picture: "images/shorts.png",
+        url: "https://soundcloud.com/runner-638296473/sets/shorts"
+    },
+];
 
-const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, external_work];
+const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
+    "CS50", "Personal Coding Projects", "External Work", "Media Projects"];
+
+const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, external_work, media];
 
 let cur_index = 0;
