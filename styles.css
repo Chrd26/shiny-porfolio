@@ -278,10 +278,10 @@ body{
     height: 100%;
     background: rgb(5,3,32);
     background: linear-gradient(21deg, 
-        rgba(5,3,32,0.8) 0%, 
-        rgba(26,24,54,0.8) 50%, 
-        rgba(64,64,149,0.8) 82%, 
-        rgba(78,112,182,0.8) 100%);
+        rgba(5,3,32,0.3) 0%,
+        rgba(26,24,54,0.3) 50%, 
+        rgba(64,64,149,0.3) 82%,
+        rgba(78,112,182,0.3) 100%);
     backdrop-filter:blur(20px);
     border-radius: 5%;
     border:1px solid black;
