@@ -369,13 +369,13 @@ footer > a{
 }
 
 @keyframes cardAnimLeft{
-    0%{margin-left:0%; margin-top:auto; margin-bottom:auto;}
-    100%{margin-left:-150%; margin-top:auto; margin-bottom:auto;}
+    0%{transform:translateX(0%);}
+    100%{transform:translateX(-150%);}
 }
 
 @keyframes cardAnimRight{
-    0%{margin-right:25%; margin-top:auto; margin-bottom:auto;}
-    100%{margin-right:-150%; margin-top:auto; margin-bottom:auto;}
+    0%{transform:translateX(5%);}
+    100%{transform:translateX(150%);}
 }
 
 /*RESPONSIVE DESIGN*/

@@ -17,7 +17,7 @@ function addCards(object){
     let divElem = document.createElement("div");
     divElem.setAttribute("class", "project_item");
     divElem.setAttribute("id", card_id);
-    divElem.style.animation = "cardAnimRight 0.2s ease-in reverse";
+    divElem.style.animation = "cardAnimRight 0.2s ease-in reverse 0.0001s";
     divElem.style.display = "block";
 
     let anchorElem = document.createElement("a");
@@ -127,7 +127,7 @@ next_project.addEventListener("click", () => {
     if (project_index < projects_count - 1){
         //console.log("Next");
         let get_card = document.getElementById("index_" + project_index);
-        get_card.style.animation = "cardAnimLeft 0.3s ease-in reverse";
+        get_card.style.animation = "cardAnimLeft 0.3s ease-in reverse 0.0001s";
         get_card.style.display = "none";
 
 
@@ -143,7 +143,7 @@ previous_project.addEventListener("click", () => {
         //console.log("previous");
         let get_card = document.getElementById("index_" + project_index);
         get_card.style.display = "none";
-        get_card.style.animation = "cardAnimRight 0.3s ease-in reverse";
+        get_card.style.animation = "cardAnimRight 0.3s ease-in reverse 0.0001s";
 
         project_index--;
         get_card = document.getElementById("index_" + project_index);
