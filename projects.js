@@ -50,8 +50,8 @@ function RemoveElements(){
     while (counter >= 0){
         let get_id = "index_" + counter;
         let get_element = document.getElementById(get_id);
-        console.log(get_id);
-        console.log(get_element);
+        //console.log(get_id);
+        //console.log(get_element);
         get_element.remove();
         counter--;
     }
@@ -60,7 +60,7 @@ function RemoveElements(){
 window.addEventListener("load", () =>
 {
         projectnames.forEach(item => {project_types++});
-        console.log(project_types);
+        //console.log(project_types);
 
         project_type.innerText = projectnames[cur_index]; 
 
@@ -95,7 +95,7 @@ next_button.addEventListener("click", () => {
 
         counter--;
         project_index = 0;
-        console.log(projects_count);
+        //console.log(projects_count);
     }
 });
 
@@ -118,14 +118,14 @@ previous_button.addEventListener("click", () => {
 
         counter--;
         project_index = 0;
-        console.log(projects_count);
+        //console.log(projects_count);
     }
 });
 
 // Change project card to the next one
 next_project.addEventListener("click", () => {
     if (project_index < projects_count - 1){
-        console.log("Next");
+        //console.log("Next");
         let get_card = document.getElementById("index_" + project_index);
         get_card.style.animation = "cardAnimLeft 0.3s ease-in reverse";
         get_card.style.display = "none";
@@ -140,15 +140,15 @@ next_project.addEventListener("click", () => {
 // Change project card to the previous one
 previous_project.addEventListener("click", () => {
    if (project_index > 0){
-        console.log("previous");
+        //console.log("previous");
         let get_card = document.getElementById("index_" + project_index);
         get_card.style.display = "none";
-        get_card.style.animation = "cardAnimRight 0.2s ease-in reverse";
+        get_card.style.animation = "cardAnimRight 0.3s ease-in reverse";
 
         project_index--;
         get_card = document.getElementById("index_" + project_index);
         get_card.style.display = "block";
-        console.log(get_card)
+        //console.log(get_card)
     } 
 })
 

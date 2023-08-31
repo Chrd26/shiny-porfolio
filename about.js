@@ -14,7 +14,7 @@ const about_gr = "Ο Χρήστος Δούρης (AKA The_Runner_01) είναι 
                     "ενδιαφέρον. Αυτόν τον καιρό διαμένει στην Αθήνα, Ελλάδα."
 
 const about_eng = "Christos Douris (AKA The_Runner_01) is a creator who blends art and " +
-                   "technology. He creates full stack web applications with Neovim, and art" +
+                   "technology. He creates full stack web applications with Neovim, and art " +
                    "applications with Processing. He is a machine learning and low level " +
                     "technologies enthusiast. He also creates experiences and games using " + 
                     "Blender 3D, Procreate, Logic Pro, and Davinci Resolve. Since 2019 he's " + 

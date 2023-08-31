@@ -98,7 +98,7 @@ const external_work = [
 const media = [
     {
         title: "Shorts",
-        picture: "images/shorts.png",
+        picture: "images/shorts.jpg",
         url: "https://soundcloud.com/runner-638296473/sets/shorts"
     },
 ];
