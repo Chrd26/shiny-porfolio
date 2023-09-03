@@ -91,15 +91,35 @@ const external_work = [
         picture: "images/TROAOP.jpg",
         url: "https://orama-interactive.itch.io/the-roots-of-all-our-problems"
     },
+    {
+        title: "Audio Design",
+        picture: "images/ma.jpg",
+        url: "https://final-punch-games.itch.io/magnetic-abuse"
+    },
+    {
+        title: "Audio Design",
+        picture: "images/tg.jpg",
+        url: "https://floating-island-studios.itch.io/tacogun"
+    },
+        {
+        title: "Audio Programming",
+        picture: "images/tt.jpg",
+        url: "https://orama-interactive.itch.io/technotribal"
+    },
 
 ];
 
 // Media Work
 const media = [
     {
-        title: "Shorts",
+        title: "Music Shorts",
         picture: "images/shorts.jpg",
         url: "https://soundcloud.com/runner-638296473/sets/shorts"
+    },
+    {
+        title: "Showcase Music",
+        picture: "images/px.jpg",
+        url: "https://www.youtube.com/watch?v=sM1v5uaBSrM&ab_channel=OramaInteractive"
     },
 ];
 
