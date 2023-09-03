@@ -36,9 +36,8 @@ const cs50 = [
     },
 ];
 
-
-// Personal Projects
-const personal_projects = [
+// Games
+const games = [ 
     {
         title: "TAOASB",
         picture: "images/TAOASM.jpg",
@@ -65,6 +64,11 @@ const personal_projects = [
         picture: "images/BBB.jpg",
         url: "https://the-runner-01.itch.io/build-back-better"
     },
+]
+
+// Personal Projects
+const personal_projects = [
+
     {
 
         title: "Do/Undo",
@@ -76,7 +80,11 @@ const personal_projects = [
         picture: "images/pwebsite.jpg",
         url: "index.html"
     },
-
+    {
+        title: "CLI Tool",
+        picture: "images/pf.jpg",
+        url: "https://github.com/Chrd26/primefactorization-commandlinetool"
+    },
 ];
 
 // Clients
@@ -124,8 +132,8 @@ const media = [
 ];
 
 const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
-    "CS50", "Personal Coding Projects", "External Work", "Media Projects"];
+    "CS50", "My Games", "Personal Coding Projects", "External Work", "Media Projects"];
 
-const projects_list = [fcc_responsive_design, fcc_javascript, cs50, personal_projects, external_work, media];
+const projects_list = [fcc_responsive_design, fcc_javascript, cs50, games, personal_projects, external_work, media];
 
 let cur_index = 0;
