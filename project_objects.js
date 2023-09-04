@@ -132,7 +132,7 @@ const media = [
 ];
 
 const projectnames = ["freeCodeCamp Responsive Design", "freeCodeCamp JavaScript", 
-    "CS50", "My Games", "Personal Coding Projects", "External Work", "Media Projects"];
+    "Harvard - CS50", "My Games", "Personal Coding Projects", "External Work", "Media Projects"];
 
 const projects_list = [fcc_responsive_design, fcc_javascript, cs50, games, personal_projects, external_work, media];
 
